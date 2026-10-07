@@ -1,0 +1,1370 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+/* =========================================
+   GIFT PAGE
+========================================= */
+
+.gift-page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fff3e7 0%,
+      #ffd9cc 50%,
+      #efb5b2 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   GIFT BOX
+========================================= */
+
+.gift-box {
+  position: relative;
+
+  width: 220px;
+  height: 210px;
+
+  animation: giftFloat 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   GIFT BODY
+========================================= */
+
+.gift-body {
+  position: absolute;
+
+  left: 25px;
+  top: 85px;
+
+  width: 170px;
+  height: 110px;
+
+  background: #f27b91;
+
+  border: 3px solid #a83d55;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 15px 25px rgba(100, 45, 55, 0.18);
+}
+
+
+/* =========================================
+   VERTICAL RIBBON
+========================================= */
+
+.gift-ribbon-vertical {
+  position: absolute;
+
+  left: 67px;
+  top: 0;
+
+  width: 32px;
+  height: 110px;
+
+  background: #ffd1d9;
+
+  border-left: 2px solid #b94b61;
+  border-right: 2px solid #b94b61;
+}
+
+
+/* =========================================
+   GIFT LID
+========================================= */
+
+.gift-lid {
+  position: absolute;
+
+  left: 15px;
+  top: 55px;
+
+  width: 190px;
+  height: 48px;
+
+  background: #e9637b;
+
+  border: 3px solid #a83d55;
+
+  border-radius: 5px;
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   HORIZONTAL RIBBON
+========================================= */
+
+.gift-ribbon-horizontal {
+  position: absolute;
+
+  left: 0;
+  top: 13px;
+
+  width: 100%;
+  height: 17px;
+
+  background: #ffd1d9;
+
+  border-top: 2px solid #b94b61;
+  border-bottom: 2px solid #b94b61;
+}
+
+
+/* =========================================
+   BOW
+========================================= */
+
+.gift-bow {
+  position: absolute;
+
+  left: 50%;
+  top: -50px;
+
+  width: 110px;
+  height: 60px;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+}
+
+
+/* LEFT SIDE OF BOW */
+
+.bow-left {
+  position: absolute;
+
+  left: 0;
+  top: 15px;
+
+  width: 55px;
+  height: 35px;
+
+  background: #ef6b82;
+
+  border: 3px solid #a83d55;
+
+  border-radius: 55% 20% 55% 25%;
+
+  transform: rotate(-18deg);
+}
+
+
+/* RIGHT SIDE OF BOW */
+
+.bow-right {
+  position: absolute;
+
+  right: 0;
+  top: 15px;
+
+  width: 55px;
+  height: 35px;
+
+  background: #ef6b82;
+
+  border: 3px solid #a83d55;
+
+  border-radius: 20% 55% 25% 55%;
+
+  transform: rotate(18deg);
+}
+
+
+/* CENTER OF BOW */
+
+.bow-center {
+  position: absolute;
+
+  left: 50%;
+  top: 20px;
+
+  width: 27px;
+  height: 32px;
+
+  transform: translateX(-50%);
+
+  background: #d94c68;
+
+  border: 3px solid #a83d55;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   PLAY BUTTON
+========================================= */
+
+.gift-play {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 4px;
+
+  border-radius: 50%;
+
+  background: rgba(75, 45, 50, 0.58);
+
+  color: white;
+
+  font-size: 22px;
+
+  z-index: 10;
+}
+
+
+/* =========================================
+   GIFT FLOATING ANIMATION
+========================================= */
+
+@keyframes giftFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+.gift-box {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gift-box:focus {
+  outline: none;
+}
+
+
+/* Temporary Page 2 */
+
+.page-two {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 70px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fff3e7 0%,
+      #ffd9cc 50%,
+      #efb5b2 100%
+    );
+
+  text-align: center;
+}
+
+.page-two h1 {
+  margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  font-weight: 500;
+
+  color: #743f45;
+}
+
+.page-two p {
+  margin: 10px 0 0;
+
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #9a5d64;
+  letter-spacing: 0.5px;
+}
+.couple-image {
+  width: 280px;
+  max-width: 75vw;
+  height: auto;
+
+  margin-top: 35px;
+
+  object-fit: contain;
+}
+/* =========================================
+   PAGE 2
+========================================= */
+
+.page-two {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: #ffd9cc;
+  background-image: radial-gradient(
+    circle at center,
+    #fff3e7 0%,
+    #ffd9cc 50%,
+    #efb5b2 100%
+  );
+
+  text-align: center;
+}
+
+.page-two-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 70px;
+}
+
+.page-two h1 {
+  margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 52px;
+  font-weight: 600;
+  color: #743f45;
+
+  animation: pageElementPop 0.8s ease-out forwards;
+}
+
+.page-two p {
+  margin: 10px 0 0;
+
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #9a5d64;
+  letter-spacing: 0.5px;
+
+  animation: pageElementPop 0.8s ease-out 0.15s both;
+}
+
+.couple-image {
+  width: 280px;
+  max-width: 75vw;
+  height: auto;
+
+  margin-top: 35px;
+  object-fit: contain;
+
+  animation: couplePop 1s ease-out 0.25s both;
+}
+
+
+/* =========================================
+   PAGE 2 ANIMATIONS
+========================================= */
+
+@keyframes pageElementPop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes couplePop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.75);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes rosePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-8deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.05) rotate(2deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes rosePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-8deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.05) rotate(2deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+
+/* =========================================
+   PAGE 3
+========================================= */
+
+.page-three {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fff3e7 0%,
+      #ffd9cc 50%,
+      #efb5b2 100%
+    );
+
+  text-align: center;
+}
+
+.page-three-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 70px;
+}
+
+.page-three h1 {
+  margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 52px;
+  font-weight: 600;
+
+  color: #743f45;
+
+  animation: pageThreeTitle 0.8s ease-out forwards;
+}
+
+.page-three-gallery {
+  width: 100%;
+
+  margin-top: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 0 25px;
+}
+
+.page-three-gallery img {
+  width: 21vw;
+  max-width: 260px;
+  height: 360px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 25px rgba(100, 45, 55, 0.18);
+
+  animation: pageThreePhoto 0.9s ease-out both;
+}
+
+.page-three-gallery img:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.page-three-gallery img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.page-three-gallery img:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.page-three-gallery img:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+
+/* =========================================
+   PAGE 3 ANIMATIONS
+========================================= */
+
+@keyframes pageThreeTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pageThreePhoto {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.85);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* =========================================
+   PAGE 3 - MOBILE PHOTO SWIPE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .page-three-gallery {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 0 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+  }
+
+  .page-three-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .page-three-gallery img {
+    flex: 0 0 calc(100vw - 40px);
+
+    width: calc(100vw - 40px);
+    max-width: none;
+
+    height: 360px;
+
+    object-fit: cover;
+
+    scroll-snap-align: center;
+  }
+
+}
+/* =========================================
+   PAGE 4
+========================================= */
+
+.page-four {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fff3e7 0%,
+      #ffd9cc 50%,
+      #efb5b2 100%
+    );
+
+  text-align: center;
+}
+
+.page-four-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 70px;
+}
+
+.page-four h1 {
+  margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 52px;
+  font-weight: 600;
+
+  color: #743f45;
+}
+
+.page-four p {
+  margin-top: 10px;
+
+  font-family: Georgia, serif;
+  font-size: 16px;
+
+  color: #9a5d64;
+}
+/* =========================
+   PAGE 4 - CAKE SCENE
+========================= */
+
+.page-four {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fff4ec 0%,
+      #ffd9ce 55%,
+      #efb5b2 100%
+    );
+}
+
+.cake-scene {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake {
+  position: relative;
+  width: 280px;
+  height: 230px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation: cakeAppear 1s ease-out forwards;
+}
+
+/* Cake top */
+
+.cake-top {
+  position: absolute;
+
+  top: 70px;
+
+  width: 240px;
+  height: 65px;
+
+  background: linear-gradient(
+    to bottom,
+    #fff1df,
+    #f5c8a9
+  );
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 8px 15px rgba(100, 45, 55, 0.18);
+}
+
+/* Cake middle */
+
+.cake-middle {
+  position: absolute;
+
+  top: 95px;
+
+  width: 240px;
+  height: 75px;
+
+  background: linear-gradient(
+    to bottom,
+    #f3b6a8,
+    #d98b86
+  );
+
+  border-radius: 15px;
+}
+
+/* Cake bottom */
+
+.cake-bottom {
+  position: absolute;
+
+  top: 145px;
+
+  width: 260px;
+  height: 65px;
+
+  background: linear-gradient(
+    to bottom,
+    #e9a39b,
+    #c97878
+  );
+
+  border-radius: 0 0 25px 25px;
+
+  box-shadow:
+    0 15px 25px rgba(100, 45, 55, 0.2);
+}
+
+/* Candle */
+
+.candle {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 20px;
+
+  width: 18px;
+  height: 65px;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #fff,
+      #fff 6px,
+      #e9a4a9 6px,
+      #e9a4a9 12px
+    );
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 3px 6px rgba(100, 45, 55, 0.15);
+}
+
+/* Flame */
+
+.flame {
+  position: absolute;
+
+  top: -32px;
+  left: 50%;
+
+  width: 18px;
+  height: 30px;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse at center bottom,
+      #fff7b0 0%,
+      #ffd15c 35%,
+      #ff8a3d 65%,
+      transparent 70%
+    );
+
+  border-radius: 50% 50% 50% 50%;
+
+  filter: drop-shadow(
+    0 0 8px rgba(255, 166, 65, 0.8)
+  );
+
+  animation: flameFlicker 0.18s infinite alternate;
+}
+
+/* Candle glow */
+
+.flame::before {
+  content: "";
+
+  position: absolute;
+
+  width: 42px;
+  height: 42px;
+
+  left: 50%;
+  top: -5px;
+
+  transform: translateX(-50%);
+
+  background: rgba(255, 190, 80, 0.18);
+
+  border-radius: 50%;
+
+  filter: blur(8px);
+}
+
+/* Flame animation */
+
+@keyframes flameFlicker {
+  0% {
+    transform: translateX(-50%) scale(1) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.08) rotate(2deg);
+  }
+
+  100% {
+    transform: translateX(-50%) scale(0.94) rotate(-1deg);
+  }
+}
+
+/* Cake entrance */
+
+@keyframes cakeAppear {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* =========================================
+   PAGE 4 - REALISTIC CAKE BIRTHDAY SCENE
+========================================= */
+
+.page-four {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ffc4c7;
+}
+  
+/* =========================================
+   CAKE
+========================================= */
+
+.cake-window {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 430px;
+
+  transform:
+    translate(-50%, -50%)
+    scale(1);
+
+  z-index: 5;
+
+  transition:
+    top 1.8s cubic-bezier(.22,.61,.36,1),
+    transform 1.8s cubic-bezier(.22,.61,.36,1);
+
+  filter:
+    drop-shadow(
+      0 20px 35px rgba(80, 35, 40, 0.22)
+    );
+}
+
+
+/* Cake image */
+
+.real-cake {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+}
+
+
+/* =========================================
+   CANDLE
+========================================= */
+
+.real-candle {
+  position: absolute;
+
+  left: 50%;
+  top: 7%;
+
+  width: 16px;
+  height: 55px;
+
+  transform: translateX(-50%);
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #fff,
+      #fff 5px,
+      #ef9fa8 5px,
+      #ef9fa8 10px
+    );
+
+  border-radius: 5px;
+
+  z-index: 10;
+}
+
+
+/* Flame */
+
+.real-flame {
+  position: absolute;
+
+  left: 50%;
+  top: -30px;
+
+  width: 17px;
+  height: 29px;
+
+  transform: translateX(-50%);
+
+  border-radius:
+    50% 50% 50% 50%;
+
+  background:
+    radial-gradient(
+      ellipse at center bottom,
+      #fffbd0 0%,
+      #ffe06b 35%,
+      #ff9d38 65%,
+      transparent 72%
+    );
+
+  filter:
+    drop-shadow(
+      0 0 9px rgba(255, 170, 70, .9)
+    );
+
+  animation:
+    realFlame 0.18s infinite alternate;
+}
+
+
+/* Flame flicker */
+
+@keyframes realFlame {
+
+  0% {
+    transform:
+      translateX(-50%)
+      scale(1)
+      rotate(-2deg);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      scale(1.08)
+      rotate(2deg);
+  }
+
+  100% {
+    transform:
+      translateX(-50%)
+      scale(.94)
+      rotate(-1deg);
+  }
+}
+
+
+/* =========================================
+   AFTER BLOW
+========================================= */
+
+.page-four.blown .cake-window {
+
+  top: 20%;
+
+  transform:
+    translate(-50%, -50%)
+    scale(.38);
+
+}
+
+
+/* =========================================
+   SMALL WINDOW AROUND CAKE
+========================================= */
+
+.page-four.blown .cake-window::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: -18px;
+
+  border: 3px solid rgba(190, 135, 75, .8);
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 0 0 5px rgba(255, 232, 190, .35),
+    0 10px 30px rgba(80, 35, 40, .25);
+
+  z-index: -1;
+
+}
+
+
+/* Small bow above window */
+
+.page-four.blown .cake-window::after {
+
+  content: "🎀";
+
+  position: absolute;
+
+  top: -65px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 45px;
+
+  z-index: 20;
+
+}
+
+
+/* =========================================
+   BIRTHDAY POP
+========================================= */
+
+.birthday-pop {
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+
+  z-index: 20;
+}
+
+
+/* Pop particles */
+
+.birthday-pop span {
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  font-size: 60px;
+
+  opacity: 0;
+
+  animation:
+    birthdayPop 1.8s ease-out forwards;
+}
+
+
+/* Different positions */
+
+.birthday-pop span:nth-child(1) {
+  --x: -300px;
+  --y: -180px;
+}
+
+.birthday-pop span:nth-child(2) {
+  --x: 280px;
+  --y: -170px;
+}
+
+.birthday-pop span:nth-child(3) {
+  --x: -250px;
+  --y: 20px;
+}
+
+.birthday-pop span:nth-child(4) {
+  --x: 260px;
+  --y: 30px;
+}
+
+.birthday-pop span:nth-child(5) {
+  --x: -180px;
+  --y: 180px;
+}
+
+.birthday-pop span:nth-child(6) {
+  --x: 190px;
+  --y: 170px;
+}
+
+.birthday-pop span:nth-child(7) {
+  --x: -80px;
+  --y: -240px;
+}
+
+.birthday-pop span:nth-child(8) {
+  --x: 90px;
+  --y: -230px;
+}
+
+
+/* Pop animation */
+
+@keyframes birthdayPop {
+
+  0% {
+    opacity: -1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(.5);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+    transform:
+      translate(
+        calc(-50% + var(--x)),
+        calc(-50% + var(--y))
+      )
+      scale(1.2)
+      rotate(25deg);
+  }
+
+}
+
+
+/* =========================================
+   BIRTHDAY WISHES
+========================================= */
+
+.birthday-wishes {
+
+  position: absolute;
+
+  left: 50%;
+  top: 53%;
+
+  width: min(600px, 85vw);
+
+  transform:
+    translateX(-50%);
+
+  text-align: center;
+
+  opacity: 0;
+
+  animation:
+    wishesAppear 1.4s ease-out 1.2s forwards;
+
+  z-index: 15;
+}
+
+
+.birthday-wishes h1 {
+
+  margin: 0;
+
+  font-family:
+    'Dancing Script',
+    cursive;
+
+  font-size: 54px;
+
+  font-weight: 600;
+
+  color: #743f45;
+
+}
+
+
+.birthday-wishes p {
+
+  margin-top: 18px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #89565d;
+
+}
+
+
+.wish-line {
+
+  margin-top: 18px;
+
+  font-size: 25px;
+
+  color: #b66a72;
+
+}
+
+
+/* Wishes fade in */
+
+@keyframes wishesAppear {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translate(-50%, 25px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translate(-50%, 0);
+
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .cake-window {
+
+    width: 330px;
+
+  }
+
+  .page-four.blown .cake-window {
+
+    top: 18%;
+
+    transform:
+      translate(-50%, -50%)
+      scale(.34);
+
+  }
+
+  .birthday-wishes {
+
+    top: 50%;
+
+    width: 85vw;
+
+  }
+
+  .birthday-wishes h1 {
+
+    font-size: 42px;
+
+  }
+
+  .birthday-wishes p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+  }
+
+  .birthday-pop span {
+
+    font-size: 24px;
+
+  }
+
+}
